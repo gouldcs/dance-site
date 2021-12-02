@@ -7,24 +7,27 @@ const Navbar  = () => {
   const handleItemClick = (e, { name }) => setActiveItem({ activeItem: name })
 
   return (
-    <Menu secondary>
-      <Menu.Item
-        name='home'
-        style={{color:'#fff'}}
-        active={activeItem === 'home'}
-        onClick={(e, name='home') => handleItemClick}
-      />
-      <Menu.Item
-        name='about us'
-        style={{color:'#fff'}}
-        active={activeItem === 'messages'}
-        onClick={(e, name='messages') => handleItemClick}
-      />
+    <Menu secondary style={{justifyContent:'center'}}>
       <Menu.Item
         name='our values'
         style={{color:'#fff'}}
-        active={activeItem === 'friends'}
-        onClick={(e, name='friends') => handleItemClick}
+        active={activeItem === 'our values'}
+        onClick={(e, name='our values') => handleItemClick}
+        href="#values"
+      />
+      <Menu.Item
+        name='project timeline'
+        style={{color:'#fff'}}
+        active={activeItem === 'project timeline'}
+        onClick={(e, name='project timeline') => handleItemClick}
+        href="#timeline"
+      />
+      <Menu.Item
+        name='our team'
+        style={{color:'#fff'}}
+        active={activeItem === 'our team'}
+        onClick={(e, name='our team') => handleItemClick}
+        href="#team"
       />
     </Menu>
   )

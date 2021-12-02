@@ -5,7 +5,7 @@ import './header.css'
 const ImageHeader = (props) => {
   return(
   <div className='container'>
-    <img style={{width:'100%'}} src={header}></img>
+    <img style={{width:'100%', borderRadius:10}} src={header}></img>
   </div>
   )
 }
